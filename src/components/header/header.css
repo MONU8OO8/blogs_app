@@ -1,0 +1,44 @@
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  background: black;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  position: relative;
+  z-index: 44;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+}
+
+nav a {
+  text-transform: capitalize;
+  margin-right: 30px;
+  color: white;
+  transition: color 0.3s; /* Add transition for smoother effect */
+}
+
+/* Logo */
+.logo img {
+  height: 30px;
+  width: 60px;
+}
+
+/* User */
+header.active {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 4px 0 rgb(115 115 115 / 20%);
+  z-index: 9999;
+  background: black;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: yellow; /* Change color on hover */
+}
