@@ -15,7 +15,7 @@ export const Card = () => {
                 <img src={item.cover} alt='' />
               </div>
               <div className='details'>
-                <Link to={`/details/${item.id}`} className='link'>
+                <Link to={`/about/${item.id}`} className='link'>
                   <h3>{item.title}</h3>
                 </Link>
                 <p>{item.desc.slice(0, 180)}...</p>
@@ -23,7 +23,7 @@ export const Card = () => {
                   <AiOutlineClockCircle className='icon' /> <label htmlFor=''>{item.date}</label>
                   <AiOutlineComment className='icon' /> <label htmlFor=''>25</label>
                   <AiOutlineShareAlt className='icon' /> <label htmlFor=''>SHARE</label>
-                  <Link to={`/details/${item.id}`} >
+                  <Link to={`/about/${item.id}`} >
                     <button className='button'>View</button>
                   </Link>
                 </div>
